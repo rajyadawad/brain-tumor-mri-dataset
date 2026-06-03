@@ -1,0 +1,61 @@
+# ---- Dataset (download separately from Kaggle — see README) ----
+Dataset/
+
+# ---- Legacy modular scaffolding (superseded by the notebook) ----
+src/
+app/
+tests/
+
+# ---- Generated outputs & logs ----
+outputs/
+logs/
+
+# ---- Claude / AI assistant artifacts ----
+.claude/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Environment / secrets ----
+.env
+.env.local
+.env.*.local
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# ---- Testing / tooling caches ----
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---- TensorBoard / TF ----
+*.tfevents.*
+tensorboard/
+
+# ---- OS / editor cruft ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
