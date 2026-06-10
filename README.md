@@ -2,7 +2,7 @@
 
 ![Banner](assets/banner.png)
 
-[![CI](https://github.com/rajyadawad/brain-tumor-mri-classification/actions/workflows/ci.yml/badge.svg)](https://github.com/rajyadawad/brain-tumor-mri-classification/actions/workflows/ci.yml)
+[![CI](https://github.com/rajyadawad/brain-tumor-mri-dataset/actions/workflows/ci.yml/badge.svg)](https://github.com/rajyadawad/brain-tumor-mri-dataset/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.16%E2%80%932.21-FF6F00?logo=tensorflow&logoColor=white)
 ![Keras 3](https://img.shields.io/badge/Keras-3-D00000?logo=keras&logoColor=white)
@@ -217,7 +217,7 @@ high-severity false negative).
 ## Repository structure
 
 ```
-brain-tumor-mri-classification/
+brain-tumor-mri-dataset/
 ├── README.md
 ├── LICENSE                       # MIT
 ├── requirements.txt
