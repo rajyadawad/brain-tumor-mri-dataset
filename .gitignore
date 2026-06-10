@@ -1,12 +1,7 @@
 # ---- Dataset (download separately from Kaggle — see README) ----
 Dataset/
 
-# ---- Legacy modular scaffolding (superseded by the notebook) ----
-src/
-app/
-tests/
-
-# ---- Generated outputs & logs ----
+# ---- Generated outputs & logs (assets are regenerated into results/figures) ----
 outputs/
 logs/
 

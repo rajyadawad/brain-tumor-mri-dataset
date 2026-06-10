@@ -1,0 +1,27 @@
+[project]
+name = "brain-tumor-mri-classification"
+version = "1.0.0"
+description = "Explainable EfficientNetB0 brain-tumour MRI classifier with calibration and a clinical decision-support simulation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Raj Yadawad" }]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+# pycodestyle (E/W), pyflakes (F), isort (I), pyupgrade (UP), bugbear (B).
+select = ["E", "W", "F", "I", "UP", "B"]
+# E501 (line length) is enforced by the formatter; keep lint focused on real bugs.
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+# Plotting utilities use compact `a; b` lines (matplotlib idiom); allow semicolons there.
+"scripts/*" = ["E702"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning"]

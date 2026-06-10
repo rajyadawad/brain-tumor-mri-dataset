@@ -1,5 +1,15 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Brain Tumor MRI Classification — runtime dependencies
+#
+# The released checkpoints in models/ were trained on TensorFlow 2.21 / Keras 3
+# (CPU). Any TensorFlow 2.16–2.21 build runs the notebook and src/ modules; the
+# pinned upper bound (<2.22) is the last version this code is validated against.
+# CI runs on tensorflow-cpu 2.19 (see .github/workflows/ci.yml) and reproduces
+# the published metrics to within ≈0.5 points.
+# ─────────────────────────────────────────────────────────────────────────────
+
 # Core scientific stack
-numpy>=1.26,<2.1
+numpy>=1.26
 pandas>=2.0
 scikit-learn>=1.3
 
@@ -9,8 +19,8 @@ Pillow>=10.0
 # Visualization
 matplotlib>=3.7
 
-# Deep learning (CNN + EfficientNet transfer learning)
-tensorflow>=2.16,<2.20
+# Deep learning (CNN + EfficientNet transfer learning, Grad-CAM)
+tensorflow>=2.16,<2.22
 
 # Notebook environment
 jupyter>=1.0
